@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-28T12:00:12Z" name="Default suite" finished-at="2024-11-28T12:00:17Z" duration-ms="4491">
+    <groups>
+    </groups>
+    <test started-at="2024-11-28T12:00:12Z" name="Default test" finished-at="2024-11-28T12:00:17Z" duration-ms="4491">
+      <class name="com.sdet.testcases.LoginTestcases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.sdet.testcases.LoginTestcases@50de186c]" started-at="2024-11-28T12:00:12Z" name="setup" finished-at="2024-11-28T12:00:14Z" duration-ms="2019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Validlogintest()[pri:0, instance:com.sdet.testcases.LoginTestcases@50de186c]" started-at="2024-11-28T12:00:14Z" name="Validlogintest" finished-at="2024-11-28T12:00:17Z" duration-ms="2312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validlogintest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.sdet.testcases.LoginTestcases@50de186c]" started-at="2024-11-28T12:00:17Z" name="teardown" finished-at="2024-11-28T12:00:17Z" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.sdet.testcases.LoginTestcases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
