@@ -1,20 +1,30 @@
 pipeline {
     agent any
     stages {
-        stage('Install Dependencies') {
+        stage('build') {
             steps {
-                sh 'pip install -r requirements.txt' // Adjust for your project
+                echo "building the project........."
+                bat "mvn clean"
             }
         }
-        stage('Run Tests') {
+        stage('test') {
             steps {
-                sh 'pytest --html=report.html'
+                echo "testing the project........."
+                bat "mvn test"
             }
         }
+        stage('compile') {
+            steps {
+                echo "compiling the project........."
+                bat "mvn compile"
+}
+}
+    stage('deploy') {
+            steps {
+                echo "deploying the project........."
+                bat "mvn deploy"
+}
+}
     }
-    post {
-        always {
-            archiveArtifacts artifacts: 'report.html', fingerprint: true
-        }
-    }
+   
 }
